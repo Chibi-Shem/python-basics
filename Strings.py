@@ -1,0 +1,13 @@
+string="i am a string"
+print(string[3])
+print(string[3:])
+print(string[:6]+"wesome")
+print(string[:6]+"wesome\nnext line")
+print("\t"+string[:4]+" tabbed")
+print(string*2)
+print("h" in string)
+print("h" not in string)
+print "%s so yeah" % (string)
+print(string+"\\ with a slash")
+print(string.capitalize())
+print(string.upper()+"!!")
