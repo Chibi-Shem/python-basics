@@ -7,7 +7,7 @@ fnum = 1.2
 print(int(fnum))
 print(complex(num))
 print(abs(-fnum))
-print(num * 9 ** 100)
+print(num * (9**100))
 num += 10
 num2 = 5
 print(max(num, num2))

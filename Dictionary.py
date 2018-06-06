@@ -9,7 +9,7 @@ print(dct)
 x = 'X'
 dct2 = {'x': x, 'y': 8, 'z': 9}
 print(dct2)
-print(str(dct) + "this string")
+print(str(dct) + 'this string')
 print(type(dct))
 dct.clear()
 dct = dct.fromkeys((1, 2, 3), 'oh')

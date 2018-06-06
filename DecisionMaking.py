@@ -1,11 +1,11 @@
 num = 99
 
 if(num > 99):
-    print("num is greater than 99")
+    print('num is greater than 99')
 elif(num is 99):
     print('num is 99')
 else:
-    print("num is less than 100")
+    print('num is less than 100')
 
 if(num < 100):
     print('num is less than 100')
@@ -19,11 +19,11 @@ if(num < 100):
 num = 1
 num2 = 0
 if(num == 0):
-    print("num is 0")
+    print('num is 0')
 elif(num is 1):
     print('num is 1')
 else:
-    print("num is another number")
+    print('num is another number')
 
 if(num > num2):
     num2 += 2

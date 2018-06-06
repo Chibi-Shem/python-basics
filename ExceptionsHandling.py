@@ -1,10 +1,10 @@
-def assertstring(x):
-    "displays an assertion error if the parameter is negative"
+def assert_string(x):
+    """Displays an assertion error if the parameter is negative."""
     assert(x >= 0), str(x) + ' is negative!!'
 
 
-def addnums(x):
-    "adds the parameter to 2"
+def add_nums(x):
+    """Adds the parameter to 2."""
     try:
         total = x + 2
     except TypeError:
@@ -13,8 +13,8 @@ def addnums(x):
         return total
 
 
-def checkzerodivisible(x, y):
-    "checks if y is not zero and if x is divisible by y"
+def check_zero_divisible(x, y):
+    """Checks if y is not zero and if x is divisible by y."""
     try:
         total = x / y
     except:
@@ -23,8 +23,8 @@ def checkzerodivisible(x, y):
         return total
 
 
-def checktuple(x):
-    "checks if parameter is a tuple"
+def check_tuple(x):
+    """Checks if parameter is a tuple."""
     try:
         x.append('yeah')
         x[0] = 1
@@ -34,8 +34,8 @@ def checktuple(x):
         return str(x) + ' is not a tuple'
 
 
-def checkaddbytwo(x):
-    "checks if parameter can be added by 2"
+def check_add_by_two(x):
+    """Checks if parameter can be added by 2."""
     total = 'an error'
     try:
         total = x + 2
@@ -43,8 +43,8 @@ def checkaddbytwo(x):
         return total
 
 
-def checkhasappend(x):
-    "checks if parameter has an append method"
+def check_has_append(x):
+    """Checks if parameter has an append method."""
     try:
         x.append('yeah')
     except AttributeError, e:
@@ -53,8 +53,8 @@ def checkhasappend(x):
         return 'the parameter has an append method'
 
 
-def raiseerror():
-    "raises an error"
+def raise_error():
+    """Raises an error."""
     try:
         raise ImportError('import error raised')
     except ImportError, e:
@@ -62,18 +62,21 @@ def raiseerror():
 
 
 class MyError(EOFError):
+
     def __init__(self, a):
+        """initializes MyError class"""
         self.args = a
 
-print(addnums('a'))
-print(checkzerodivisible(3, 0))
-print(checkzerodivisible(6, 3))
-print(checktuple((1, 2, 3)))
-print(checktuple([1, 2, 3]))
-print(checkaddbytwo('a'))
-print(checkhasappend('a'))
-print(checkhasappend(['a', 'b', 'c']))
-raiseerror()
+
+print(add_nums('a'))
+print(check_zero_divisible(3, 0))
+print(check_zero_divisible(6, 3))
+print(check_tuple((1, 2, 3)))
+print(check_tuple([1, 2, 3]))
+print(check_add_by_two('a'))
+print(check_has_append('a'))
+print(check_has_append(['a', 'b', 'c']))
+raise_error()
 try:
     raise MyError('this is my customized EOFerror')
 except MyError, e:
@@ -81,4 +84,4 @@ except MyError, e:
     for x in e:
         total += x
     print(total)
-# assertstring(-1)
+assert_string(-1)

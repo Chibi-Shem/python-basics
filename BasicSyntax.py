@@ -1,7 +1,7 @@
 print("Hello World!")
 print('hi')
 print("Hello")
-# this comment
+# This is a comment.
 print("""multiple
         lines""")
 print('one')
@@ -11,5 +11,5 @@ if True:
     print('true')
 else:
     print('false')
-print('first' +
-      'second')
+print('first'
+      + 'second')

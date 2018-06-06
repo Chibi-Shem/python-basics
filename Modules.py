@@ -8,7 +8,7 @@ main = Tkinter.Tk()
 main.withdraw()
 
 print(tkMessageBox.showinfo('a title', 'hi'))
-location = Nominatim().geocode("Digos")
+location = Nominatim().geocode('Digos')
 print(location.address)
 
 print(dir(__builtins__))
@@ -19,9 +19,10 @@ print(math.sqrt(25))
 print(globals().keys())
 
 
-def printlocalvars():
+def print_local_vars():
+    """Prints all local variables."""
     x = 'i am local'
     print(locals().values())
 
 
-printlocalvars()
+print_local_vars()

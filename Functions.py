@@ -1,44 +1,44 @@
-globalvar = 'unchanged'
+global_var = 'unchanged'
 
 
-def printfunc(x):
-    "prints the passed parameter"
+def print_func(x):
+    """Prints the passed parameter."""
     print(x)
 
 
 def add(x, y):
-    "adds both int parameters"
+    """Adds both int parameters."""
     print(x + y)
 
 
 def sub(x, y):
-    "returns the difference of both int parameters"
+    """Returns the difference of both int parameters."""
     return x - y
 
 
 def concat(x, y):
-    "concatenates both string parameters"
+    """Concatenates both string parameters."""
     print(str(x) + str(y))
 
 
-def addelement(x, y):
-    "adds element y into list x"
+def add_element(x, y):
+    """Adds element y into list x."""
     x.append(y)
     print(x)
 
 
 def fullname(firstname, lastname):
-    "returns the fullname"
+    """Returns the fullname."""
     print(firstname + ' ' + lastname)
 
 
-def addword(x, y='world'):
-    "adds word y into word x. by default, 'world' is added"
+def add_word(x, y='world'):
+    """Adds word y into word x.  By default, 'world' is added."""
     print(str(x) + str(y))
 
 
-def addmultiple(*args):
-    "returns the sum of multiple int parameters not less than 2"
+def add_multiple(*args):
+    """Returns the sum of multiple int parameters not less than 2."""
     total = 0
     if(len(args) >= 2):
         for x in args:
@@ -48,23 +48,23 @@ def addmultiple(*args):
 
 
 def multiply(x, y):
-    "returns the product of both int parameters"
+    """Returns the product of both int parameters."""
     return x * y
 
 
-def nochangeglobal(x):
-    "does nothing to global variable globalvar"
-    globalvar = x
+def no_change_global(x):
+    """Does nothing to global variable global_var."""
+    global_var = x
 
 
-printfunc('hello')
+print_func('hello')
 add(1, 1)
 print(sub(1, 1))
 concat(1, 1)
-addelement([1, 2, 3], 4)
+add_element([1, 2, 3], 4)
 fullname('Shem', 'Ipanag')
-addword('hello ')
-print(addmultiple(1, 2, 3, 4, 5))
+add_word('hello ')
+print(add_multiple(1, 2, 3, 4, 5))
 print(multiply(1, 2))
-nochangeglobal('change')
-print(globalvar)
+no_change_global('change')
+print(global_var)
