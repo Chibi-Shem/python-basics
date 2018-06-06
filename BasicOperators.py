@@ -24,21 +24,21 @@ num2 //= fnum
 print num2
 
 string = "Hello World"
-lst=[1,2,3,"y","n"]
-tpl=("y","n",1,2,3)
-dct={"one":1.3,"two":2,3:"three"}
+lst = [1, 2, 3, "y", "n"]
+tpl = ("y", "n", 1, 2, 3)
+dct = {"one": 1.3, "two": 2, 3: "three"}
 
 print(num + fnum)
-print(fnum -num)
+print(fnum - num)
 print(num * 2)
 print(fnum % 1)
-print(num/2)
-print(num**2)
-print(fnum//1)
-print(num==fnum)
-print(fnum!=num)
-print(num>fnum)
-print(num<fnum)
+print(num / 2)
+print(num ** 2)
+print(fnum // 1)
+print(num == fnum)
+print(fnum != num)
+print(num > fnum)
+print(num < fnum)
 print("true" and 1)
 print(0 or 1)
 print(not num)

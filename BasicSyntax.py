@@ -1,13 +1,15 @@
 print("Hello World!")
-print 'hi'
-print "Hello"
-#this comment
-print """multiple
-lines"""
-print 'one'; print 'two'; print 'three'
+print('hi')
+print("Hello")
+# this comment
+print("""multiple
+        lines""")
+print('one')
+print('two')
+print('three')
 if True:
-	print 'true'
+    print('true')
 else:
-	print 'false'
-print 'first'+\
-	'second'
+    print('false')
+print('first' +
+      'second')
